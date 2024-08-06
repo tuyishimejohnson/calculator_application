@@ -69,11 +69,11 @@ const Calculator = () => {
             </div>
 
             <div>
-                <div className='grid grid-cols-4 gap-2'>
+                <div className='grid grid-cols-4 gap-1'>
                     <span className=' border flex justify-center py-5 border-black' onClick={deleteInputs}>AC</span>
                     <span className=' border flex justify-center py-5 border-black' onClick={handlePositiveNegative}>+/-</span>
                     <span className=' border flex justify-center py-5 border-black' onClick={() => handleOperatorClick("%")}>%</span>
-                    <div className='grid row-span-4 gap-2'>
+                    <div className='grid row-span-4 gap-1'>
 
                         <span className='bg-yellow-600 border flex justify-center py-5 border-black row-span-2' onClick={() => handleOperatorClick("/")}>/</span>
                         <span className='bg-yellow-600 border flex justify-center py-5 border-black ' onClick={() => handleOperatorClick("*")}>*</span>
@@ -87,7 +87,7 @@ const Calculator = () => {
                     ))}
                     
                     <span className=' border flex justify-center py-5 border-black' onClick={() => handleOperatorClick(".")}>.</span>
-                    <span className=' border flex justify-center py-5 border-black' onClick={handleResults}>=</span>
+                    <span className=' flex justify-center py-5 border-black bg-yellow-600 border' onClick={handleResults}>=</span>
                 </div>
             </div>
         </div>
